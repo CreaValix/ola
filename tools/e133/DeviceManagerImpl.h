@@ -60,13 +60,13 @@ using std::vector;
 
 /**
  * This class is responsible for maintaining connections to E1.33 devices.
- * TODO(simon): Some of this code can be re-used for the controller side. See
+ * TODO(simon): Some of this code can be reused for the controller side. See
  * if we can factor it out.
  */
 class DeviceManagerImpl {
  public:
     /*
-     * The callback used to receive RDMNet layer messages from the devices.
+     * The callback used to receive RDMnet layer messages from the devices.
      * @returns true if the data should be acknowledged, false otherwise.
      */
     typedef ola::Callback3<bool, const IPV4Address&, uint16_t,
